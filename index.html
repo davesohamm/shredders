@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Martel Sans:wght@600&display=swap"
+  />
+  <link
+    rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@200&display=swap"
+  />
+  <link
+    rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Martel:wght@400&display=swap"
+  />
+  <link
+    rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Montaga:wght@400&display=swap"
+  />
+    <link rel="stylesheet" href="styles.css">
+    <title>Title</title>
+</head>
+<body>
+    <header>
+        <!-- Title and Logo -->
+        <div class="title-logo">
+            
+                <p class="speech-to-text">SIH1456</p>
+                <p class="speech-to-text">
+                  Speech to text transcription for Indian languages
+                </p>
+                <p class="national-technical-research">
+                  National Technical Research Organisation(NTRO)
+            </div>
+           
+            <div class="logo">
+              <img src="media/shredders.png" alt="Logo" width="300" height="300">
+          </div>
+
+    </header>
+
+    <nav id="navbar">
+        <ul>
+            <li><a href="howitworks.html">How It Works</a></li>
+            <li><a href="howtouse.html">How To Use</a></li>
+            <li><a href="https://sih.gov.in/">SIH</a></li>
+            <li><a href="aboutus.html">About Us</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <!-- Dropdown Button (You can add options later) -->
+        <div class="dropdown">
+            <input type="checkbox" id="dropdown-toggle" class="dropdown-toggle">
+            <label for="dropdown-toggle" class="dropdown-button">Select Language</label>
+            <ul class="dropdown-content">
+                <li><a href="#">English</a></li>
+                <li><a href="#">Hindi</a></li>
+                <li><a href="#">Gujarati</a></li>
+                <li><a href="#">Tamil</a></li>
+            </ul>
+        </div>
+       
+
+        <!-- Microphone Button and Upload Files Button -->
+        <section class="content">
+          <button id="recordButton">Record</button>
+          <button id="stopButton" disabled>Stop</button>
+          <input type="file" id="fileInput" accept=".wav, .mp3">
+          <button id="uploadButton">Upload Files</button>
+          <audio id="audioPlayer" controls></audio>
+          <textarea id="textOutput" rows="5" cols="40" readonly></textarea>
+          <button id="submitButton" disabled>Submit</button>
+      </section>
+
+`
+        <!-- Copy Button -->
+        <button id="copyButton">Copy</button>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>

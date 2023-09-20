@@ -1,0 +1,176 @@
+/* Global Styles */
+body {
+    background: linear-gradient(to bottom, #fff, rgba(57, 152, 206, 0.65));
+    font-family: 'Martel', 'cursive';
+    margin: 0;
+    padding: 0;
+}
+
+/* Header Styles */
+header {
+    background-color: #fff; /* Background color for header */
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    font-family: 'Martel', 'cursive';
+}
+
+.logo {
+    flex: 0;
+    margin-right: 20px;
+}
+
+.logo img {
+    width: 200px; /* Adjust the size as needed */
+    height: 200px;
+    border-radius: 50%; /* Make it circular if your logo is a circle */
+    object-fit: cover; /* Maintain aspect ratio and cover the entire container */
+}
+
+
+
+
+
+/* Style the navigation bar */
+nav {
+    background: linear-gradient(to right, #FF9900, #FF6666);
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+nav ul {
+    list-style: none;
+}
+
+nav li {
+    display: inline-block;
+    margin: 0 20px;
+    position: relative;
+    transform: translateY(10px);
+    opacity: 0;
+    animation: fadeInUp 0.6s ease-in-out forwards;
+    animation-delay: 0.3s;
+}
+nav a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 16px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    transition: color 0.3s ease-in-out;
+}
+
+nav a:hover {
+    color: #FF3333;
+}
+
+/* Animation keyframes */
+@keyframes fadeInUp {
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+
+
+
+
+/* Dropdown Styles */
+.dropdown {
+    display: inline-block;
+    margin: 20px;
+}
+
+.dropdown-toggle {
+    display: none;
+}
+
+.dropdown-button {
+    background-color: #4285F4;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    user-select: none;
+}
+
+.dropdown-content {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+}
+
+.dropdown-content a {
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    color: #333;
+    cursor: pointer; /* Add cursor pointer for the language options */
+}
+
+.dropdown-content a:hover {
+    background-color: #ddd;
+}
+
+/* Add this CSS to hide the dropdown when a language is selected */
+.dropdown-toggle:checked + .dropdown-button + .dropdown-content {
+    display: none;
+}
+
+/* Add this CSS to show the dropdown when the checkbox is checked */
+.dropdown-toggle:checked + .dropdown-button + .dropdown-content {
+    display: block;
+}
+
+/* Microphone Button and Upload Files Button Styles */
+
+
+button {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+button:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+}
+
+#textOutput {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    resize: vertical;
+}
+
+#audioPlayer {
+    width: 100%;
+    max-width: 400px;
+    margin-top: 10px;
+}
+
+
+
+/* Copy Button Styles */
+#copyButton {
+    background-color: #4285F4;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
