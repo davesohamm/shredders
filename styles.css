@@ -35,7 +35,7 @@ header {
 
 /* Style the navigation bar */
 nav {
-    background: linear-gradient(to right, #FF9900, #FF6666);
+    background: linear-gradient(to right, #00efff, #6677ff);
     color: #fff;
     text-align: center;
     padding: 10px 0;
@@ -145,7 +145,7 @@ button {
 }
 
 button:disabled {
-    background-color: #ccc;
+    background-color: #ff0808e3;
     cursor: not-allowed;
 }
 
